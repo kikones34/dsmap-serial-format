@@ -59,12 +59,12 @@ All integers and doubles are stored in little-endian order.
 
 Suppose we serialize the following `ds_map`:
 
-```c
-map = ds_map_create()
-ds_map_add(map, "random", 4)
-ds_map_add(map, "universe", 42)
-ds_map_add(map, 3.14, "pi")
-show_debug_message(ds_map_write(map))
+```gml
+map = ds_map_create();
+ds_map_add(map, "random", 4);
+ds_map_add(map, "universe", 42);
+ds_map_add(map, 3.14, "pi");
+show_debug_message(ds_map_write(map));
 ```
 
 The output is the following:
